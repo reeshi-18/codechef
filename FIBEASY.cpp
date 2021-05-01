@@ -20,8 +20,12 @@ int main()
 		cin>>n;
 		
 		int pos=0;
-		while(n>>=1) 
-		++pos;
+		
+		while(n>1)
+		{
+			pos++;
+			n=n/2;
+		}
 		
 		n= ((ll)pow(2,pos)-1)%60;
 		cout<<a[n]<<endl;
